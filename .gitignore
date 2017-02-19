@@ -1,0 +1,39 @@
+# Eclipse project files
+*.classpath
+*.project
+.settings/
+
+.metadata
+
+# Intellij project files
+*.iml
+.idea/
+
+# Others
+target/
+logs/
+classes/
+out/
+Servers/
+RemoteSystemsTempFiles/
+
+*.log
+
+#thrift out java
+
+#make.sh
+make.sh
+
+.DS_Store
+**/.DS_Store
+
+
+#example code, please do not remove it
+examples
+
+#
+**/build.xml
+
+#jetty
+disconf/*
+src/main/java/com/weyao/activity/test.java

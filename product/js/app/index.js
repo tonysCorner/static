@@ -1,5 +1,4 @@
-require([
-    ], function() {
+require(['common/ajax'], function(Ajax) {
     var module = {
         $btn:$('#btn'),
         $mask:$('#mask'),
@@ -9,6 +8,7 @@ require([
     $.extend(module, {
         init: function() {
             module.initEvent();
+            module.testAjax();
         },
 
         initEvent: function() {
@@ -26,7 +26,21 @@ require([
 
             })
 
+        },
+
+        testAjax : function() {
+            Ajax.SYCAjax({
+                url: "http://101.37.18.181:8080/api-framework/api/test.xhtml",
+                type: 'GET',
+                data: {},
+                success: function (res) {
+                    console.log(res);
+                }
+
+            });
         }
+
+
 
     });
 
